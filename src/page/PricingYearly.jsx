@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../component/Footer';
-import '../component/Semua.css';
+import '../component/style.css';
 
 export default function PricingYearly() {
   return (

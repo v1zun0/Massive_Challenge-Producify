@@ -1,6 +1,6 @@
 import React from 'react';
 // import '../component/styleLogin.css';
-import "../component/Semua.css";
+import "../component/style.css";
 
 export default function Login() {
   return (

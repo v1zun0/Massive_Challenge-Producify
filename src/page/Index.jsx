@@ -1,5 +1,5 @@
 import Footer from "../component/Footer";
-import "../component/Semua.css";
+import "../component/style.css";
 
 const Index = () => {
 
