@@ -1,5 +1,6 @@
 import React from 'react';
 import "../component/style.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Login() {
   return (
@@ -44,15 +45,15 @@ export default function Login() {
           <div className="d-grid gap-3 col-6 mx-auto" style={{ marginTop: '10px' }}>
             <button type="google" className="btn btn-light">
               <img src="icon/google.png" alt="Google logo" className="rounded float-start" />
-              <a style={{ fontWeight: '600' }}>Sign in with Google</a>
+              <a style={{ fontWeight: '600', fontSize: "20px"}}>Sign in with Google</a>
             </button>
             <button type="facebook" className="btn btn-light">
               <img src="icon/facebook.png" alt="Facebook logo" className="rounded float-start" />
-              <a style={{ fontWeight: '600' }}>Sign in with Facebook</a>
+              <a style={{ fontWeight: '600', fontSize: "20px" }}>Sign in with Facebook</a>
             </button>
             <button type="apple" className="btn btn-light">
               <img src="icon/apple.png" alt="Apple ID logo" className="rounded float-start" />
-              <a style={{ fontWeight: '600' }}>Sign in with Apple ID</a>
+              <a style={{ fontWeight: '600', fontSize: "20px" }}>Sign in with Apple ID</a>
             </button>
           </div>
 
@@ -62,7 +63,7 @@ export default function Login() {
 
           <div className="signinhere" style={{ fontSize: '20px', color: 'white', textAlign: 'center', marginTop: '10px' }}>
             <p style={{ display: 'inline-block' }}>Don't have an account?</p>
-            <nav style={{ bsBreadcrumbDivider: '', display: 'inline-block' }} className="breadcrumb">
+            <nav style={{color: "white", display: 'inline-block' }} className="breadcrumb">
               <a href="/Register">Sign up here!</a>
             </nav>
           </div>
