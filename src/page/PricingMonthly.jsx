@@ -35,7 +35,7 @@ export default function PricingMonthly() {
       {/* Akhir Navigation Bar */}
       <body style={{ backgroundColor: '#e7f9ff' }}>
         {/* <!-- Konten 2 --> */}
-        <section style={{ backgroundColor: '#e7f9ff' }} className="d-md-flex mx-5">
+        <section style={{ backgroundColor: '#e7f9ff' }} className="d-md-flex mx-5 mt-5">
           <div className="container">
             <div className="mb-3 mt-5">
               <div className="card shadow " style={{ width: '100%', height: '100%', borderRadius: '15px', backgroundColor: '#9BD5E9' }}>

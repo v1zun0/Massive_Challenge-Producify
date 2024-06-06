@@ -1,3 +1,27 @@
+/* Style Login */
+.global-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.login-form{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 658px;
+  padding: 40px;
+  background-color: #006E92;
+}
+
+.form-label{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+/* Akhir Style Login */
+
 .navbar-nav .btn {
   background: linear-gradient(#5ad2f9, #023c50);
 }
