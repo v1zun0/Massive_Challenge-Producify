@@ -7,7 +7,7 @@ export default function Login() {
     <>
     <body style={{backgroundColor: "#E7F9FF"}}>
       <div className="global-container">
-        <div className="card login-form" style={{ height: "auto", backgroundColor:"#006E92"}}>
+        <div className="card login-form rounded" style={{ height: "auto", backgroundColor:"#006E92"}}>
           <div className="card-body">
             <h1 className="card-title text-center" style={{color: "white"}}>Producify</h1>
           </div>
