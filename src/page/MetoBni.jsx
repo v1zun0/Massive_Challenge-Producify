@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../component/style.css';
+import CopyAccountNumber from '../component/CopyAccountNumber.jsx';
 
-export default function Todo() {
+export default function MetoBni() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggle = () => {
@@ -128,19 +129,44 @@ export default function Todo() {
         </div>
       </aside>
       <div className="main p-3">
-        <div className="d-flex justify-content-between">
-          <div className="text-left">
-            <p>My Project #1</p>
-            <p className="desk">
-              Let's make your day more productive by using <br />
-              Producify!
-            </p>
-          </div>
-          <div className="date">
-            <p>1 Januari 2025</p>
-          </div>
+        <div className="text-center">
+          {/* <!-- Konten --> */}
+          <section>
+            <div className="container">
+              <div className="text-center mt-2">
+                <div className="col mt-3">
+                  <h3 className="text-black">Choose your payment method</h3>
+                </div>
+              </div>
+              <div className="card-bni mt-3">
+                <div className="bank-details d-flex align-items-center">
+                  <img src="icon/bni.png" alt="BNI Mobile Banking" className="bank-logo me-3" style={{ float: 'left' }} />
+                  <div>
+                    <span>BNI Bank</span>
+                    <div>
+                      <p>Virtual Account Number:</p>
+                      <p className="account-number">
+                        8807 0857 0432 2222{' '}
+                        <CopyAccountNumber/>
+                      </p>
+                      <p class="note">Enter the virtual account number within 10 minutes</p>
+                      <p>Pay the order to the Virtual Account above before making another order with the Virtual Account so that the number remains the same.</p>
+                      <p>Only accept from BNI bank</p>
+                      <p>Inter-bank transfer fees and transfer limitations may apply if you transfer from a bank other than BNI</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="back-arrow mt-3">
+                <a href="/MetoMerahHijau">
+                  <img src="icon/Arrow back.png" alt="back" style={{ height: '35px' }} />
+                </a>
+              </div>
+            </div>
+          </section>
+          {/* <!-- Akhir Konten --> */}
         </div>
-        <div className="line"></div>
       </div>
     </div>
   );

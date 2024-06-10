@@ -31,7 +31,7 @@ export default function Login() {
               </form>
             </div>
             <div className="mx-auto mt-3">
-              <a href='/Tips1' type="sign up" className="btn btn-primary" style={{ height: '40px', width: '200px' }}>
+              <a href='/Todo' type="sign up" className="btn btn-primary" style={{ height: '40px', width: '200px' }}>
                 Log in
               </a>
             </div>

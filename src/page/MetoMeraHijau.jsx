@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../component/style.css';
 
-export default function Todo() {
+export default function MetoMerahhijau() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggle = () => {
@@ -128,19 +128,48 @@ export default function Todo() {
         </div>
       </aside>
       <div className="main p-3">
-        <div className="d-flex justify-content-between">
-          <div className="text-left">
-            <p>My Project #1</p>
-            <p className="desk">
-              Let's make your day more productive by using <br />
-              Producify!
-            </p>
-          </div>
-          <div className="date">
-            <p>1 Januari 2025</p>
-          </div>
+        <div className="text-center">
+          {/* <!-- Konten --> */}
+          <section>
+            <div className="text-center mt-2">
+              <div className="col mt-3">
+                <h3 className="text-black">Choose your payment method</h3>
+              </div>
+            </div>
+            <div className="row justify-content-center pb-5 pt-3 ps-5 px-5">
+              <div className="p-2">
+                <div className="rounded-4 card p-4 shadow">
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <img src="icon/bitcoin-cash-money.256x223.png" alt="m-banking" width="5%" />
+                    <p className="ms-3 pt-3">M-Banking :</p>
+                    <div className="position-absolute top-50 end-0 translate-middle-y pe-4">
+                      <a href="/MetoBni" type="button" className="btn text-black" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#01ff3c' }}>
+                        Pay Now
+                      </a>
+                      <a href="/MetoBni" type="button" className="btn text-black ms-2 text-white" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#006E92' }}>
+                        Change
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="p-2">
+                <div className="rounded-4 card p-4 shadow">
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <img src="icon/wallet.256x192.png" alt="m-banking" width="5%" />
+                    <p className="ms-3 pt-3">E-Wallet :</p>
+                    <div className="position-absolute top-50 end-0 translate-middle-y pe-4">
+                      <a href="/Ewallet" type="button" className="btn d-grid text-white ms-auto" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#cf0000' }}>
+                        Connect
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* <!-- Akhir Konten --> */}
         </div>
-        <div className="line"></div>
       </div>
     </div>
   );

@@ -324,10 +324,91 @@ a.sidebar-link:hover {
   margin: 100px 100px;
 }
 
-.warna-bg{
+.warna-bg {
   background: linear-gradient(#9bd5e9, #dbf6ff);
 }
 
-.warna-bt{
+.warna-bt {
   background: linear-gradient(#5ad2f9, #023c50);
+}
+
+/* Style metopem - BNI */
+
+.bank-logo {
+  width: 60px; /* Adjust size as needed */
+  margin-bottom: 300px;
+}
+.bank-details {
+  margin-bottom: 10px;
+}
+
+.icon img {
+  margin-left: 100px;
+}
+
+.bank-input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: blue; /* Mengubah warna teks menjadi biru */
+  padding: 0;
+}
+
+.card-bni {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.bank-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.bank-details {
+  text-align: left;
+}
+
+.bank-details p {
+  margin: 10px 0;
+}
+
+.account-number {
+  font-weight: bold;
+  border-bottom: 1px solid black; /* Menambahkan garis bawah dengan ketebalan 1px dan warna hitam */
+  display: inline-block; /* Mengubah elemen <p> menjadi inline-block agar garis bawah hanya melintasi teks */
+}
+
+.bank-details {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.account-number {
+  display: flex;
+  align-items: center;
+}
+.account-number button {
+  margin-left: 10px;
+}
+
+.note {
+  color: #0288d1;
+}
+
+.back-arrow {
+  margin-top: 20px;
+}
+
+.back-arrow a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #000;
 }
