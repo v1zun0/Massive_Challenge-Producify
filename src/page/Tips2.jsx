@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../component/style.css';
 
-export default function Tips1() {
+export default function Tips2() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggle = () => {
@@ -127,75 +127,50 @@ export default function Tips1() {
           </a>
         </div>
       </aside>
-      <div className="main p-3 flex-grow-1">
-        <div className="container-fluid">
-          <div className="row justify-content-center">
-            <div className="col-12 d-flex justify-content-center flex-column align-items-center">
-              {/* <!-- Tulisan di atas kartu --> */}
-              <div className="text-center mb-3">
-                <h2>Here’s tips for you</h2>
+      <div className="main d-flex flex-column flex-grow-1 p-3">
+        <div className="d-flex justify-content-center align-items-center flex-grow-1">
+          {/* <!-- Konten --> */}
+          <div className="rounded-4 card" style={{ maxWidth: '900px' }}>
+            <div className="card-body d-flex flex-column">
+              <a href="/Tips1">
+                <b>
+                  <u>back</u>
+                </b>
+              </a>
+              <h3 className="card-title text-center">Manage productivity even though you are busy with work?</h3>
+              <div className="d-flex justify-content-center">
+                <video controls className="mt-3 mb-0" style={{ width: '75%' }}>
+                  <source src="../../public/video/Chat.mp4" type="video/mp4" />
+                </video>
               </div>
-              {/* <!-- Kartu 1 --> */}
-              <div className="rounded-4 card mb-4">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src="img/imagetips.png" className="rounded-4 card-img-top p-2" alt="Card Image" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5>
-                        <a href="/Tips2" className="card-title">
-                          Manage productivity even though you are busy with work?
-                        </a>
-                      </h5>
-                      <p></p>
-                      <p className="card-text">In the current era of globalization, we are faced with the density of tasks in the places where we work, how do we stay productive when we have many tasks that need to be completed?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- Kartu 2 --> */}
-              <div className="rounded-4 card mb-4">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src="img/imagetips.png" className="rounded-4 card-img-top p-2" alt="Card Image" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5>
-                        <a href="tips2.html" className="card-title">
-                          Manage productivity even though you are busy with work?
-                        </a>
-                      </h5>
-                      <p></p>
-                      <p className="card-text">In the current era of globalization, we are faced with the density of tasks in the places where we work, how do we stay productive when we have many tasks that need to be completed?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- Kartu 3 --> */}
-              <div className="rounded-4 card mb-4">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src="img/imagetips.png" className="rounded-4 card-img-top p-2" alt="Card Image" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5>
-                        <a href="tips2.html" className="card-title">
-                          Manage productivity even though you are busy with work?
-                        </a>
-                      </h5>
-                      <p></p>
-                      <p className="card-text">In the current era of globalization, we are faced with the density of tasks in the places where we work, how do we stay productive when we have many tasks that need to be completed?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- Akhir Kartu --> */}
+              <p></p>
+              <p className="card-text flex-grow-1">
+                In this modern era, high work demands sometimes make us feel overwhelmed and find it difficult to balance it with our personal lives. However, that doesn't mean we can't be productive individuals in the midst of busy work.
+                Here are some tips you can try:
+              </p>
+              <h5 className="card-title">Set Priorities and Create a To-Do List</h5>
+              <p className="card-text flex-grow-1">
+                The first step to increasing productivity is to set priorities and create a to-do list. This will help you to focus on the most important and urgent tasks, and avoid procrastination. Use methods like Time Blocking to divide
+                your time more effectively. Allocate a certain amount of time for each task and stick to that schedule.
+              </p>
+              <h5 className="card-title">Avoid Distractions and Create a Conducive Work Environment</h5>
+              <p className="card-text flex-grow-1">
+                Distractions such as social media notifications, emails, and phone calls can hinder focus and decrease productivity. Turn off those notifications while you work or use a website blocking app. Create a conducive work
+                environment by tidying up your work desk and ensuring adequate lighting.
+              </p>
+              <h5 className="card-title">Take time to rest and take care of your health</h5>
+              <p className="card-text flex-grow-1">
+                Working continuously without stopping is not only ineffective, but can also harm your physical and mental health. Take time to take a short break every few hours to stretch your body and clear your mind. Do activities you
+                enjoy outside of work hours to maintain mental and physical health.
+              </p>
+              <p className="card-text flex-grow-1">
+                By implementing the tips above, you can increase productivity amidst busy work and achieve balance between professional and personal life. Remember that the main key to becoming a productive individual is to be disciplined,
+                focused and consistent in implementing the right strategy..
+              </p>
             </div>
           </div>
         </div>
+        {/* <!-- Akhir Konten --> */}
       </div>
     </div>
   );

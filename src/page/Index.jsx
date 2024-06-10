@@ -25,7 +25,7 @@ const Index = () => {
                 <a className="nav-link pe-4" href="/aboutus">
                   About Us
                 </a>
-                <a type="button" className="btn btn-primary" href="/Login">
+                <a type="button" className="btn btn-primary warna-bt" href="/Login">
                   Login
                 </a>
               </div>
@@ -35,7 +35,7 @@ const Index = () => {
         {/* Akhir Navigation Bar */}
       <body style={{backgroundColor: "#e7f9ff"}}>
         {/* Jumbotron */}
-        <section className="warna-bg"  >
+        <section className="warna-bg">
           <div className="container mb-5 pt-5 pb-5">
             <div className="row justify-content-evenly fs-5">
               <div className="col-sm mt-5">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../component/style.css';
 
-export default function Tips1() {
+export default function Todo() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggle = () => {
@@ -127,75 +127,20 @@ export default function Tips1() {
           </a>
         </div>
       </aside>
-      <div className="main p-3 flex-grow-1">
-        <div className="container-fluid">
-          <div className="row justify-content-center">
-            <div className="col-12 d-flex justify-content-center flex-column align-items-center">
-              {/* <!-- Tulisan di atas kartu --> */}
-              <div className="text-center mb-3">
-                <h2>Here’s tips for you</h2>
-              </div>
-              {/* <!-- Kartu 1 --> */}
-              <div className="rounded-4 card mb-4">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src="img/imagetips.png" className="rounded-4 card-img-top p-2" alt="Card Image" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5>
-                        <a href="/Tips2" className="card-title">
-                          Manage productivity even though you are busy with work?
-                        </a>
-                      </h5>
-                      <p></p>
-                      <p className="card-text">In the current era of globalization, we are faced with the density of tasks in the places where we work, how do we stay productive when we have many tasks that need to be completed?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- Kartu 2 --> */}
-              <div className="rounded-4 card mb-4">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src="img/imagetips.png" className="rounded-4 card-img-top p-2" alt="Card Image" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5>
-                        <a href="tips2.html" className="card-title">
-                          Manage productivity even though you are busy with work?
-                        </a>
-                      </h5>
-                      <p></p>
-                      <p className="card-text">In the current era of globalization, we are faced with the density of tasks in the places where we work, how do we stay productive when we have many tasks that need to be completed?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- Kartu 3 --> */}
-              <div className="rounded-4 card mb-4">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <img src="img/imagetips.png" className="rounded-4 card-img-top p-2" alt="Card Image" />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h5>
-                        <a href="tips2.html" className="card-title">
-                          Manage productivity even though you are busy with work?
-                        </a>
-                      </h5>
-                      <p></p>
-                      <p className="card-text">In the current era of globalization, we are faced with the density of tasks in the places where we work, how do we stay productive when we have many tasks that need to be completed?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- Akhir Kartu --> */}
-            </div>
+      <div className="main p-3">
+        <div className="d-flex justify-content-between">
+          <div className="text-left">
+            <p>My Project #1</p>
+            <p className="desk">
+              Let's make your day more productive by using <br />
+              Producify!
+            </p>
+          </div>
+          <div className="date">
+            <p>1 Januari 2025</p>
           </div>
         </div>
+        <div className="line"></div>
       </div>
     </div>
   );
