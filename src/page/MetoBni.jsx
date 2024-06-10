@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../component/style.css';
+import '../component/Sidebar';
 import CopyAccountNumber from '../component/CopyAccountNumber.jsx';
 
 export default function MetoBni() {
@@ -12,6 +13,7 @@ export default function MetoBni() {
   return (
     <div className="wrapper">
       <aside id="sidebar" className={isExpanded ? 'expand' : ''}>
+        {/* Isi Sidebar */}
         <div className="d-flex">
           <div className="user-img">
             <a data-bs-toggle="dropdown" aria-expanded="false">
@@ -146,8 +148,7 @@ export default function MetoBni() {
                     <div>
                       <p>Virtual Account Number:</p>
                       <p className="account-number">
-                        8807 0857 0432 2222{' '}
-                        <CopyAccountNumber/>
+                        8807 0857 0432 2222 <CopyAccountNumber />
                       </p>
                       <p class="note">Enter the virtual account number within 10 minutes</p>
                       <p>Pay the order to the Virtual Account above before making another order with the Virtual Account so that the number remains the same.</p>
