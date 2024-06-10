@@ -25,7 +25,7 @@ export default function AboutUs() {
                 <a className="nav-link pe-4 active" aria-current="page" href="/aboutus">
                   About Us
                 </a>
-                <a type="button" className="btn btn-primary" href="/Login">
+                <a type="button" className="btn btn-primary warna-bt" href="/Login">
                   Login
                 </a>
               </div>
