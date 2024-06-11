@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
 const Sidebar = ({ handleToggle }) => {
   return (
     <>
       <div className="wrapper">
-        <aside id="sidebar" className={isExpanded ? 'expand' : ''}>
+        <aside id="sidebar" className={isExpanded ? "expand" : ""}>
           {/* Isi Sidebar */}
           <div className="d-flex">
             <div className="user-img">
               <a data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="img/gojo.png" alt="me" />
               </a>
-              <ul className="rounded-4 dropdown-menu mt-5 ms-2 me-2 pe-2 ps-2" style={{ backgroundColor: '#006E92', width: '25%' }}>
+              <ul className="rounded-4 dropdown-menu mt-5 ms-2 me-2 pe-2 ps-2" style={{ backgroundColor: "#006E92", width: "25%" }}>
                 <div className="dropdown-item d-flex gap-1">
                   <img src="img/gojo.png" alt="me" />
                   <div className="mt-3 text-white">
@@ -23,7 +23,7 @@ const Sidebar = ({ handleToggle }) => {
                   </div>
                 </div>
                 <li>
-                  <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+                  <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
                 </li>
                 <li>
                   <a className="dropdown-item text-white" href="#">
@@ -41,7 +41,7 @@ const Sidebar = ({ handleToggle }) => {
                   </a>
                 </li>
                 <li>
-                  <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+                  <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
                 </li>
                 <li>
                   <a className="dropdown-item text-white" href="/">
@@ -68,7 +68,7 @@ const Sidebar = ({ handleToggle }) => {
             </div>
           </div>
 
-          <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+          <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
 
           <ul className="sidebar-nav">
             <li className="sidebar-item">
@@ -109,7 +109,7 @@ const Sidebar = ({ handleToggle }) => {
             </li>
           </ul>
 
-          <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+          <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
 
           <div className="sidebar-item">
             <a href="#" className="sidebar-link">
@@ -118,7 +118,7 @@ const Sidebar = ({ handleToggle }) => {
             </a>
           </div>
 
-          <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+          <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
 
           <div className="sidebar-item">
             <a href="/UpgradeMonthly" className="sidebar-link">

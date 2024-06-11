@@ -1,89 +1,92 @@
-import React from 'react';
-import '../component/style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from "react";
+import "../component/style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [notelp, setNotelp] = useState("");
+  const [confPassword, setConfPassword] = useState("");
+  const [msg, setMsg] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post("http://localhost:5000/users", {
+        name: name,
+        email: email,
+        password: password,
+        notelp: notelp,
+        confPassword: confPassword,
+      });
+      navigate("/login");
+    } catch (error) {
+      if (error.response) {
+        setMsg(error.response.data.msg);
+      }
+    }
+  };
+
   return (
     <>
-      <body style={{ backgroundColor: '#E7F9FF' }}>
+      <div style={{ backgroundColor: "#E7F9FF", minHeight: "100vh" }}>
         <div className="global-container">
-          <div className="card login-form" style={{ height: 'auto', backgroundColor: '#006E92' }}>
+          <div className="card login-form" style={{ height: "auto", backgroundColor: "#006E92" }}>
             <div className="card-body">
               <h1 className="card-title text-center">Producify</h1>
             </div>
 
             <div className="card-text">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                  <label for="inputUsername" className="form-label">
+                  <label htmlFor="inputUsername" className="form-label">
                     Username
                   </label>
-                  <input type="username" className="form-control" id="inputUsername" placeholder="Enter your username..." />
+                  <input type="text" className="form-control" id="inputUsername" placeholder="Enter your username..." value={name} onChange={(e) => setName(e.target.value)} />
                 </div>
                 <div className="mb-3">
-                  <label for="inputPhoneNumber" className="form-label">
+                  <label htmlFor="inputPhoneNumber" className="form-label">
                     Phone Number
                   </label>
-                  <input type="phonenumber" className="form-control" id="inputPhoneNumber" placeholder="Enter your phone number..." />
+                  <input type="text" className="form-control" id="inputPhoneNumber" placeholder="Enter your phone number..." value={notelp} onChange={(e) => setNotelp(e.target.value)} />
                 </div>
                 <div className="mb-3">
-                  <label for="inputEmail" className="form-label">
+                  <label htmlFor="inputEmail" className="form-label">
                     Email
                   </label>
-                  <input type="email" className="form-control" id="inputEmail" placeholder="Enter your email..." />
+                  <input type="email" className="form-control" id="inputEmail" placeholder="Enter your email..." value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className="mb-3">
-                  <label for="inputPassword" className="form-label">
+                  <label htmlFor="inputPassword" className="form-label">
                     Password
                   </label>
-                  <input type="password" className="form-control" id="inputPassword" placeholder="Enter your password..." />
+                  <input type="password" className="form-control" id="inputPassword" placeholder="Enter your password..." value={password} onChange={(e) => setPassword(e.target.value)} />
                 </div>
+                <div className="mb-3">
+                  <label htmlFor="inputConfPassword" className="form-label">
+                    Confirm Password
+                  </label>
+                  <input type="password" className="form-control" id="inputConfPassword" placeholder="Confirm your password..." value={confPassword} onChange={(e) => setConfPassword(e.target.value)} />
+                </div>
+                {msg && <div className="alert alert-danger">{msg}</div>}
+                <button type="submit" className="btn btn-primary">
+                  Sign up
+                </button>
               </form>
             </div>
-            <button type="sign up" className="btn btn-primary" disabled>
-              Sign up
-            </button>
-            <br />
-            <div className="d-flex align-items-center">
-              <hr className="hr-light flex-grow-1" />
-              <p className="mx-3" style={{ color: 'white', fontSize: '20px' }}>
-                Or
-              </p>
-              <hr className="hr-light flex-grow-1" />
-            </div>
-
-            <div className="d-grid gap-3 col-6 mx-auto" style={{ marginTop: '10px' }}>
-              <button type="google" className="btn btn-light">
-                <img src="icon/google.png" alt="Google logo" className="rounded float-start" />
-                <span style={{ fontWeight: '600' }}>Sign up with Google</span>
-              </button>
-              <button type="facebook" className="btn btn-light">
-                <img src="icon/facebook.png" alt="Facebook logo" className="rounded float-start" />
-                <span style={{ fontWeight: '600' }}>Sign up with Facebook</span>
-              </button>
-              <button type="apple" className="btn btn-light">
-                <img src="icon/apple.png" alt="Apple ID logo" className="rounded float-start" />
-                <span style={{ fontWeight: '600' }}>Sign up with Apple ID</span>
-              </button>
-            </div>
-
-            <hr className="hr-light" style={{ marginTop: '40px' }} />
-
-            <br />
-
-            <div className="signinhere" style={{ fontSize: '20px', color: 'white', textAlign: 'center', marginTop: '10px' }}>
-              <p style={{ display: 'inline-block' }}>Already have an account?</p>
-              <nav style={{ bsBreadcrumbDivider: '', display: 'inline-block' }} className="breadcrumb">
-                <a href="#">Sign in here!</a>
-              </nav>
-            </div>
+            {/* Other UI elements */}
           </div>
         </div>
 
         {/* <!-- Bootstrap JS --> */}
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossOrigin="anonymous"></script>
         <script src="script.js"></script>
-      </body>
+      </div>
     </>
   );
 }

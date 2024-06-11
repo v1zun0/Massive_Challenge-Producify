@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../component/style.css';
+import React, { useState } from "react";
+import "../component/style.css";
 
 export default function MetoHijau() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -10,14 +10,14 @@ export default function MetoHijau() {
 
   return (
     <div className="wrapper">
-      <aside id="sidebar" className={isExpanded ? 'expand' : ''}>
+      <aside id="sidebar" className={isExpanded ? "expand" : ""}>
         {/* Isi Sidebar */}
         <div className="d-flex">
           <div className="user-img">
             <a data-bs-toggle="dropdown" aria-expanded="false">
               <img src="img/gojo.png" alt="me" />
             </a>
-            <ul className="rounded-4 dropdown-menu mt-5 ms-2 me-2 pe-2 ps-2" style={{ backgroundColor: '#006E92', width: '25%' }}>
+            <ul className="rounded-4 dropdown-menu mt-5 ms-2 me-2 pe-2 ps-2" style={{ backgroundColor: "#006E92", width: "25%" }}>
               <div className="dropdown-item d-flex gap-1">
                 <img src="img/gojo.png" alt="me" />
                 <div className="mt-3 text-white">
@@ -29,7 +29,7 @@ export default function MetoHijau() {
                 </div>
               </div>
               <li>
-                <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+                <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
               </li>
               <li>
                 <a className="dropdown-item text-white" href="#">
@@ -47,7 +47,7 @@ export default function MetoHijau() {
                 </a>
               </li>
               <li>
-                <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+                <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
               </li>
               <li>
                 <a className="dropdown-item text-white" href="/">
@@ -74,7 +74,7 @@ export default function MetoHijau() {
           </div>
         </div>
 
-        <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+        <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
 
         <ul className="sidebar-nav">
           <li className="sidebar-item">
@@ -115,7 +115,7 @@ export default function MetoHijau() {
           </li>
         </ul>
 
-        <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+        <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
 
         <div className="sidebar-item">
           <a href="#" className="sidebar-link">
@@ -124,7 +124,7 @@ export default function MetoHijau() {
           </a>
         </div>
 
-        <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
+        <hr style={{ width: "auto", color: "white", height: "2px", border: "none", backgroundColor: "white" }} />
 
         <div className="sidebar-item">
           <a href="/UpgradeMonthly" className="sidebar-link">
@@ -145,14 +145,14 @@ export default function MetoHijau() {
             <div className="row justify-content-center pb-5 pt-3 ps-5 px-5">
               <div className="p-2">
                 <div className="rounded-4 card p-4 shadow">
-                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <div style={{ display: "flex", alignItems: "center" }}>
                     <img src="icon/bitcoin-cash-money.256x223.png" alt="m-banking" width="5%" />
                     <p className="ms-3 pt-3">M-Banking :</p>
                     <div className="position-absolute top-50 end-0 translate-middle-y pe-4">
-                      <a href="/MetoBni" type="button" className="btn text-black" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#01ff3c' }}>
+                      <a href="/MetoBni" type="button" className="btn text-black" style={{ height: "35px", width: "150px", borderRadius: "50px", backgroundColor: "#01ff3c" }}>
                         Pay Now
                       </a>
-                      <a href="/MetoBni" type="button" className="btn text-black ms-2 text-white" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#006E92' }}>
+                      <a href="/MetoBni" type="button" className="btn text-black ms-2 text-white" style={{ height: "35px", width: "150px", borderRadius: "50px", backgroundColor: "#006E92" }}>
                         Change
                       </a>
                     </div>
@@ -161,14 +161,14 @@ export default function MetoHijau() {
               </div>
               <div className="p-2">
                 <div className="rounded-4 card p-4 shadow">
-                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <div style={{ display: "flex", alignItems: "center" }}>
                     <img src="icon/wallet.256x192.png" alt="m-banking" width="5%" />
                     <p className="ms-3 pt-3">E-Wallet :</p>
                     <div className="position-absolute top-50 end-0 translate-middle-y pe-4">
-                      <a href="/MetoBni" type="button" className="btn text-black" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#01ff3c' }}>
+                      <a href="/MetoBni" type="button" className="btn text-black" style={{ height: "35px", width: "150px", borderRadius: "50px", backgroundColor: "#01ff3c" }}>
                         Pay Now
                       </a>
-                      <a href="/Ewallet" type="button" className="btn text-black ms-2 text-white" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#006E92' }}>
+                      <a href="/Ewallet" type="button" className="btn text-black ms-2 text-white" style={{ height: "35px", width: "150px", borderRadius: "50px", backgroundColor: "#006E92" }}>
                         Change
                       </a>
                     </div>
@@ -178,7 +178,7 @@ export default function MetoHijau() {
             </div>
             <div className="back-arrow mt-3">
               <a href="/UpgradeMonthly">
-                <img src="icon/Arrow back.png" alt="back" style={{ height: '35px' }} />
+                <img src="icon/Arrow back.png" alt="back" style={{ height: "35px" }} />
               </a>
             </div>
           </section>

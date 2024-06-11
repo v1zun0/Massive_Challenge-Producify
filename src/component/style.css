@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); */
 
 html,
 body {
   background-color: #e7f9ff;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -126,7 +126,7 @@ h1 {
 }
 
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .wrapper {
@@ -257,10 +257,10 @@ a.sidebar-link:hover {
   opacity: 1;
 }
 
-#sidebar.expand .sidebar-link[data-bs-toggle='collapse']::after {
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
   border: solid;
   border-width: 0 0.075rem 0.075rem 0;
-  content: '';
+  content: "";
   display: inline-block;
   padding: 2px;
   position: absolute;
@@ -270,7 +270,7 @@ a.sidebar-link:hover {
   transition: all 0.2s ease-out;
 }
 
-#sidebar.expand .sidebar-link[data-bs-toggle='collapse'].collapsed::after {
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
   transform: rotate(45deg);
   transition: all 0.2s ease-out;
 }
