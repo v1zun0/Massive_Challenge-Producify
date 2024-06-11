@@ -1,6 +1,5 @@
-// CopyAccountNumber.js
 import React from 'react';
-import './style.css';  // Import CSS file
+import './style.css';
 
 const CopyAccountNumber = () => {
   const copyAccountNumber = () => {

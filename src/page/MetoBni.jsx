@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../component/style.css';
-import '../component/Sidebar';
+import footer from '../component/Sidebar';
 import CopyAccountNumber from '../component/CopyAccountNumber.jsx';
 
 export default function MetoBni() {
@@ -19,12 +19,15 @@ export default function MetoBni() {
             <a data-bs-toggle="dropdown" aria-expanded="false">
               <img src="img/gojo.png" alt="me" />
             </a>
-            <ul className="dropdown-menu mt-5 ms-2" style={{ backgroundColor: '#006E92' }}>
+            <ul className="rounded-4 dropdown-menu mt-5 ms-2 me-2 pe-2 ps-2" style={{ backgroundColor: '#006E92', width: '25%' }}>
               <div className="dropdown-item d-flex gap-1">
                 <img src="img/gojo.png" alt="me" />
                 <div className="mt-3 text-white">
                   <h3>Satoru Gojo</h3>
-                  <span>@satorugojo</span>
+                  <div className="d-flex justify-content-between">
+                    <span>@satorugojo</span>
+                    <span>Free</span>
+                  </div>
                 </div>
               </div>
               <li>
@@ -32,7 +35,7 @@ export default function MetoBni() {
               </li>
               <li>
                 <a className="dropdown-item text-white" href="#">
-                  Action
+                  Setting
                 </a>
               </li>
               <li>
@@ -57,7 +60,9 @@ export default function MetoBni() {
           </div>
           <div className="sidebar-logo text-white">
             <a>Satoru Gojo</a>
-            <span>@satorugojo</span>
+            <div>
+              <span>@satorugojo</span>
+            </div>
           </div>
           <div className="logo">
             <div className="sidebar-item">
@@ -124,7 +129,7 @@ export default function MetoBni() {
         <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
 
         <div className="sidebar-item">
-          <a href="/MetoMerah" className="sidebar-link">
+          <a href="/UpgradeMonthly" className="sidebar-link">
             <i className="lni lni-diamond-alt"></i>
             <span>Upgrade your plan</span>
           </a>
@@ -141,7 +146,7 @@ export default function MetoBni() {
                 </div>
               </div>
               <div className="card-bni mt-3">
-                <div className="bank-details d-flex align-items-center">
+                <div className="bank-details d-flex align-items">
                   <img src="icon/bni.png" alt="BNI Mobile Banking" className="bank-logo me-3" style={{ float: 'left' }} />
                   <div>
                     <span>BNI Bank</span>

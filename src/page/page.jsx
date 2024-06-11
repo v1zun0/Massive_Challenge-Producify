@@ -13,5 +13,7 @@ import MetoBni from './MetoBni'
 import MetoHijau from './MetoHijau'
 import MetoMerahHijau from './MetoMeraHijau'
 import MetoMerah from './MetoMerah'
+import UpgradeMonthly from './UpgradeMonthly'
+import UpgradeYearly from './UpgradeYearly'
 
-export { Index, AboutUs, PricingMonthly, PricingYearly, Login, Register, Tips1, Tips2, Todo, Ewallet, Mbanking, MetoBni, MetoHijau, MetoMerahHijau, MetoMerah };
+export { Index, AboutUs, PricingMonthly, PricingYearly, Login, Register, Tips1, Tips2, Todo, Ewallet, Mbanking, MetoBni, MetoHijau, MetoMerahHijau, MetoMerah, UpgradeMonthly, UpgradeYearly };

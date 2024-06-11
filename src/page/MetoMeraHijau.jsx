@@ -11,17 +11,21 @@ export default function MetoMerahhijau() {
   return (
     <div className="wrapper">
       <aside id="sidebar" className={isExpanded ? 'expand' : ''}>
+        {/* Isi Sidebar */}
         <div className="d-flex">
           <div className="user-img">
             <a data-bs-toggle="dropdown" aria-expanded="false">
               <img src="img/gojo.png" alt="me" />
             </a>
-            <ul className="dropdown-menu mt-5 ms-2" style={{ backgroundColor: '#006E92' }}>
+            <ul className="rounded-4 dropdown-menu mt-5 ms-2 me-2 pe-2 ps-2" style={{ backgroundColor: '#006E92', width: '25%' }}>
               <div className="dropdown-item d-flex gap-1">
                 <img src="img/gojo.png" alt="me" />
                 <div className="mt-3 text-white">
                   <h3>Satoru Gojo</h3>
-                  <span>@satorugojo</span>
+                  <div className="d-flex justify-content-between">
+                    <span>@satorugojo</span>
+                    <span>Free</span>
+                  </div>
                 </div>
               </div>
               <li>
@@ -29,7 +33,7 @@ export default function MetoMerahhijau() {
               </li>
               <li>
                 <a className="dropdown-item text-white" href="#">
-                  Action
+                  Setting
                 </a>
               </li>
               <li>
@@ -54,7 +58,9 @@ export default function MetoMerahhijau() {
           </div>
           <div className="sidebar-logo text-white">
             <a>Satoru Gojo</a>
-            <span>@satorugojo</span>
+            <div>
+              <span>@satorugojo</span>
+            </div>
           </div>
           <div className="logo">
             <div className="sidebar-item">
@@ -121,7 +127,7 @@ export default function MetoMerahhijau() {
         <hr style={{ width: 'auto', color: 'white', height: '2px', border: 'none', backgroundColor: 'white' }} />
 
         <div className="sidebar-item">
-          <a href="/MetoMerah" className="sidebar-link">
+          <a href="/UpgradeMonthly" className="sidebar-link">
             <i className="lni lni-diamond-alt"></i>
             <span>Upgrade your plan</span>
           </a>
@@ -146,7 +152,7 @@ export default function MetoMerahhijau() {
                       <a href="/MetoBni" type="button" className="btn text-black" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#01ff3c' }}>
                         Pay Now
                       </a>
-                      <a href="/MetoBni" type="button" className="btn text-black ms-2 text-white" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#006E92' }}>
+                      <a href="/Mbanking" type="button" className="btn text-black ms-2 text-white" style={{ height: '35px', width: '150px', borderRadius: '50px', backgroundColor: '#006E92' }}>
                         Change
                       </a>
                     </div>
@@ -166,6 +172,11 @@ export default function MetoMerahhijau() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="back-arrow mt-3">
+              <a href="/UpgradeMonthly">
+                <img src="icon/Arrow back.png" alt="back" style={{ height: '35px' }} />
+              </a>
             </div>
           </section>
           {/* <!-- Akhir Konten --> */}

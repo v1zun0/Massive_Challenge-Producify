@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Index, AboutUs, PricingMonthly, PricingYearly, Login, Register, Tips1, Tips2, Todo, Ewallet, Mbanking, MetoBni, MetoHijau, MetoMerahHijau, MetoMerah} from '../page/page';
+import { Index, AboutUs, PricingMonthly, PricingYearly, Login, Register, Tips1, Tips2, Todo, Ewallet, Mbanking, MetoBni, MetoHijau, MetoMerahHijau, MetoMerah, UpgradeMonthly, UpgradeYearly} from '../page/page';
 
 const Path = () => {
   return (
@@ -22,6 +22,8 @@ const Path = () => {
           <Route path="/MetoHijau" element={<MetoHijau/>} />
           <Route path="/MetoMerahHijau" element={<MetoMerahHijau/>} />
           <Route path="/MetoMerah" element={<MetoMerah/>} />
+          <Route path="/UpgradeMonthly" element={<UpgradeMonthly/>} />
+          <Route path="/UpgradeYearly" element={<UpgradeYearly/>} />
         </Route>
       </Routes>
     </Router>

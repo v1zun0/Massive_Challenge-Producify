@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from '../component/Footer';
-import "../component/style.css";
+import '../component/style.css';
 
 export default function PricingMonthly() {
   return (
     <>
       {/* Navigation Bar */}
-      <nav className="navbar navbar-expand-lg navbar-dark navbar fixed-top" style={{backgroundColor: "#0496C7"}}>
+      <nav className="navbar navbar-expand-lg navbar-dark navbar fixed-top" style={{ backgroundColor: '#0496C7' }}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             Producify
